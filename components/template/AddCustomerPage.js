@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Form from "../module/Form";
 import { useRouter } from "next/router";
+import Form from "../module/Form";
 
 function AddCustomerPage() {
   const [form, setForm] = useState({
     name: "",
-    lastname: "",
+    lastName: "",
     email: "",
     phone: "",
     address: "",
@@ -30,7 +30,7 @@ function AddCustomerPage() {
   const cancelHandler = () => {
     setForm({
       name: "",
-      lastname: "",
+      lastName: "",
       email: "",
       phone: "",
       address: "",
