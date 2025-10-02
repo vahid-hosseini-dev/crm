@@ -1,4 +1,4 @@
-import CustomerDetailsPage from "@/components/template/customerDetailsPage";
+import CustomerDetailsPage from "@/components/template/CustomerDetailsPage";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -17,7 +17,7 @@ function Index() {
         .then((res) => res.json())
         .then((data) => setData(data.data));
     }
-  }, [isReady]);
+  }, [isReady, customerId]);
 
   if (data) return <CustomerDetailsPage data={data} />;
 }
